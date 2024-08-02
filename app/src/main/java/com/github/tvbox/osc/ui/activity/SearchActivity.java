@@ -490,11 +490,11 @@ public class SearchActivity extends BaseActivity {
             siteKey.add(bean.getKey());
             allRunCount.incrementAndGet();
         }
-        //if (siteKey.size() <= 0) {
-            //Toast.makeText(mContext, "没有指定搜索源", //Toast.LENGTH_SHORT).show();
-            //showEmpty();
-            //return;
-        //}
+        if (siteKey.size() <= 0) {
+            Toast.makeText(mContext, "没有指定搜索源", Toast.LENGTH_SHORT).show();
+            showEmpty();
+            return;
+        }
         for (String key : siteKey) {
             searchExecutorService.execute(new Runnable() {
                 @Override
