@@ -274,7 +274,7 @@ public class SearchActivity extends BaseActivity {
             }
         });
         setLoadSir(llLayout);
-        
+     }
 
     private void initViewModel() {
         sourceViewModel = new ViewModelProvider(this).get(SourceViewModel.class);
