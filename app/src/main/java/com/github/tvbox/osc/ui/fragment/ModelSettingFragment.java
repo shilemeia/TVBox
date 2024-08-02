@@ -89,9 +89,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
         tvFastSearchText.setText(Hawk.get(HawkConfig.FAST_SEARCH_MODE, false) ? "已开启" : "已关闭");
         tvRecStyleText = findViewById(R.id.showRecStyleText);
         tvRecStyleText.setText(Hawk.get(HawkConfig.HOME_REC_STYLE, false) ? "是" : "否");
-        tvShowPreviewText = findViewById(R.id.showPreviewText);
-        tvShowPreviewText.setText(Hawk.get(HawkConfig.SHOW_PREVIEW, true) ? "开启" : "关闭");
-        tvDebugOpen = findViewById(R.id.tvDebugOpen);
+
         tvParseWebView = findViewById(R.id.tvParseWebView);
         tvMediaCodec = findViewById(R.id.tvMediaCodec);
         tvPlay = findViewById(R.id.tvPlay);
@@ -118,14 +116,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
         tvPlay.setText(PlayerHelper.getPlayerName(Hawk.get(HawkConfig.PLAY_TYPE, 0)));
         tvRender.setText(PlayerHelper.getRenderName(Hawk.get(HawkConfig.PLAY_RENDER, 0)));
         tvIjkCachePlay.setText(Hawk.get(HawkConfig.IJK_CACHE_PLAY, false) ? "开启" : "关闭");
-        findViewById(R.id.llDebug).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FastClickCheckUtil.check(v);
-                Hawk.put(HawkConfig.DEBUG_OPEN, !Hawk.get(HawkConfig.DEBUG_OPEN, false));
-                tvDebugOpen.setText(Hawk.get(HawkConfig.DEBUG_OPEN, false) ? "已打开" : "已关闭");
-            }
-        });
+        
         findViewById(R.id.llParseWebVew).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -483,21 +474,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 dialog.show();
             }
         });
-        SettingActivity.callback = new SettingActivity.DevModeCallback() {
-            @Override
-            public void onChange() {
-                findViewById(R.id.llDebug).setVisibility(View.VISIBLE);
-            }
-        };
 
-        findViewById(R.id.showPreview).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FastClickCheckUtil.check(v);
-                Hawk.put(HawkConfig.SHOW_PREVIEW, !Hawk.get(HawkConfig.SHOW_PREVIEW, true));
-                tvShowPreviewText.setText(Hawk.get(HawkConfig.SHOW_PREVIEW, true) ? "开启" : "关闭");
-            }
-        });
         findViewById(R.id.llHistoryNum).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
