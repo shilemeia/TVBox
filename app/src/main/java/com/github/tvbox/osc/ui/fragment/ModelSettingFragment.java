@@ -148,22 +148,6 @@ public class ModelSettingFragment extends BaseLazyFragment {
                 }
             }
         });
-        findViewById(R.id.llBackup).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FastClickCheckUtil.check(v);
-                BackupDialog dialog = new BackupDialog(mActivity);
-                dialog.show();
-            }
-        });
-        findViewById(R.id.llAbout).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FastClickCheckUtil.check(v);
-                AboutDialog dialog = new AboutDialog(mActivity);
-                dialog.show();
-            }
-        });
         
         findViewById(R.id.llHomeApi).setOnClickListener(new View.OnClickListener() {
             @Override
