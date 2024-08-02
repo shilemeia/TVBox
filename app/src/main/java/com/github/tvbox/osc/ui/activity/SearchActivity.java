@@ -158,7 +158,7 @@ public class SearchActivity extends BaseActivity {
         llLayout = findViewById(R.id.llLayout);
         etSearch = findViewById(R.id.etSearch);
         tvSearch = findViewById(R.id.tvSearch);
-        //tvSearchCheckboxBtn = findViewById(R.id.tvSearchCheckboxBtn);
+        tvSearchCheckboxBtn = findViewById(R.id.tvSearchCheckboxBtn);
         tvClear = findViewById(R.id.tvClear);
         mGridView = findViewById(R.id.mGridView);
         keyboard = findViewById(R.id.keyBoardRoot);
