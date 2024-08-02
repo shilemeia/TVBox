@@ -283,7 +283,8 @@ public class HomeActivity extends BaseActivity {
                             @Override
                             public void run() {
                                 if (!useCacheConfig)
-                                    Toast.makeText(HomeActivity.this, "自定义jar加载成功", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(HomeActivity.this, "欢迎使用华仔影音", Toast.LENGTH_SHORT).show();
+//自定义加载jar成功
                                 initData();
                             }
                         }, 50);
