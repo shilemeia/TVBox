@@ -631,9 +631,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
     }
 
 
-    public static SearchRemoteTvDialog loadingSearchRemoteTvDialog;
-    public static List<String> remoteTvHostList;
-    public static boolean foundRemoteTv;
+
 
     @Override
     public void onDestroyView() {
