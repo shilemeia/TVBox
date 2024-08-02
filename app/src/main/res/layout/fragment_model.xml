@@ -701,7 +701,7 @@
                     android:layout_marginRight="@dimen/vs_5"
                     android:focusable="false"
                     android:orientation="horizontal">
-
+                </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/llIjkCachePlay"
