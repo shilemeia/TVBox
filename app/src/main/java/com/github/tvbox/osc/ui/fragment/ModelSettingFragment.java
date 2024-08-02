@@ -475,6 +475,13 @@ public class ModelSettingFragment extends BaseLazyFragment {
             }
         });
 
+SettingActivity.callback = new SettingActivity.DevModeCallback() {
+            @Override
+            public void onChange() {
+                findViewById(R.id.llDebug).setVisibility(View.VISIBLE);
+            }
+        };
+
         findViewById(R.id.llHistoryNum).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
