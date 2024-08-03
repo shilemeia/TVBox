@@ -98,7 +98,6 @@ public class ModelSettingFragment extends BaseLazyFragment {
         tvHomeApi = findViewById(R.id.tvHomeApi);
         tvDns = findViewById(R.id.tvDns);
         tvHomeRec = findViewById(R.id.tvHomeRec);
-        tvHistoryNum = findViewById(R.id.tvHistoryNum);
         tvIjkCachePlay = findViewById(R.id.tvIjkCachePlay);
         tvMediaCodec.setText(Hawk.get(HawkConfig.IJK_CODEC, ""));
         tvDebugOpen.setText(Hawk.get(HawkConfig.DEBUG_OPEN, false) ? "已打开" : "已关闭");
