@@ -248,15 +248,17 @@
 
             </LinearLayout>              
 
+
+
+
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/vs_60"
                     android:layout_marginBottom="@dimen/vs_10"
                     android:focusable="false"
-                    android:orientation="horizontal">
-                    
-                    <LinearLayout
-                        android:id="@+id/llSearchView"
+                    android:orientation="horizontal"> 
+                <LinearLayout
+                        android:id="@+id/llScale"
                         android:layout_width="@dimen/vs_0"
                         android:layout_height="match_parent"
                         android:layout_marginEnd="@dimen/vs_5"
@@ -272,7 +274,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="搜索展示"
+                            android:text="画面缩放"
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_24" />
 
@@ -282,7 +284,7 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/tvSearchView"
+                            android:id="@+id/tvScaleType"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/white"
@@ -392,9 +394,8 @@
                             android:textSize="@dimen/ts_30" />
                 </LinearLayout>
 
-
-                <LinearLayout
-                        android:id="@+id/llScale"
+                    <LinearLayout
+                        android:id="@+id/llSearchView"
                         android:layout_width="@dimen/vs_0"
                         android:layout_height="match_parent"
                         android:layout_marginEnd="@dimen/vs_5"
@@ -410,7 +411,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="画面缩放"
+                            android:text="搜索展示"
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_24" />
 
@@ -420,7 +421,7 @@
                             android:layout_weight="1" />
 
                         <TextView
-                            android:id="@+id/tvScaleType"
+                            android:id="@+id/tvSearchView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/white"
@@ -435,7 +436,6 @@
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_30" />
                     </LinearLayout>
-
             </LinearLayout>
 
             <LinearLayout
