@@ -212,6 +212,8 @@
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_30" />
                     </LinearLayout>
+</LinearLayout>
+
 
     
 
