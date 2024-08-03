@@ -88,7 +88,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
         tvFastSearchText = findViewById(R.id.showFastSearchText);
         tvFastSearchText.setText(Hawk.get(HawkConfig.FAST_SEARCH_MODE, false) ? "已开启" : "已关闭");
         tvRecStyleText = findViewById(R.id.showRecStyleText);
-        tvRecStyleText.setText(Hawk.get(HawkConfig.HOME_REC_STYLE, false) ? "是" : "否");
+        tvRecStyleText.setText(Hawk.get(HawkConfig.HOME_REC_STYLE, true) ? "是" : "否");
  
         tvDebugOpen = findViewById(R.id.tvDebugOpen);
 
