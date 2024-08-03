@@ -89,7 +89,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
         tvFastSearchText.setText(Hawk.get(HawkConfig.FAST_SEARCH_MODE, false) ? "已开启" : "已关闭");
         tvRecStyleText = findViewById(R.id.showRecStyleText);
         tvRecStyleText.setText(Hawk.get(HawkConfig.HOME_REC_STYLE, false) ? "是" : "否");
-        tvShowPreviewText = findViewById(R.id.showPreviewText); tvShowPreviewText.setText(Hawk.get(HawkConfig.SHOW_PREVIEW, true) ? "开启" : "关闭");
+ 
         tvDebugOpen = findViewById(R.id.tvDebugOpen);
 
         tvParseWebView = findViewById(R.id.tvParseWebView);
@@ -493,14 +493,7 @@ SettingActivity.callback = new SettingActivity.DevModeCallback() {
             }
         };
 
-        findViewById(R.id.showPreview).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FastClickCheckUtil.check(v);
-                Hawk.put(HawkConfig.SHOW_PREVIEW, !Hawk.get(HawkConfig.SHOW_PREVIEW, true));
-                tvShowPreviewText.setText(Hawk.get(HawkConfig.SHOW_PREVIEW, true) ? "开启" : "关闭");
-            }
-        });
+        
 
         findViewById(R.id.llHistoryNum).setOnClickListener(new View.OnClickListener() {
             @Override
