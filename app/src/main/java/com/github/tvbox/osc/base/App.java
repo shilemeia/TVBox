@@ -67,6 +67,8 @@ public class App extends MultiDexApplication {
         putDefault(HawkConfig.SEARCH_VIEW, 1);
 //搜索展示：0=文字列表，1=缩略图
 putDefault(HawkConfig.IJK_CODEC, "硬解码");
+putDefault(HawkConfig.HOME_REC_STYLE, true);
+
 
         if (!Hawk.contains(HawkConfig.PLAY_TYPE)) {
             Hawk.put(HawkConfig.PLAY_TYPE, 1);
