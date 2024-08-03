@@ -269,9 +269,9 @@
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_30" />
                     </LinearLayout>
+                 </LinearLayout>
 
 
-            </LinearLayout>
 
             <LinearLayout
                     android:layout_width="match_parent"
@@ -279,6 +279,7 @@
                     android:layout_marginBottom="@dimen/vs_10"
                     android:focusable="false"
                     android:orientation="horizontal">
+
 
                 <LinearLayout
                         android:id="@+id/llPlay"
@@ -322,6 +323,7 @@
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_30" />
                 </LinearLayout>
+
 
                 <LinearLayout
                         android:id="@+id/llMediaCodec"
@@ -460,9 +462,8 @@
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_30" />
                 </LinearLayout>
-
-
             </LinearLayout>
+
 
             <LinearLayout
                     android:layout_width="match_parent"
@@ -576,6 +577,7 @@
 
 
 
+
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/vs_60"
@@ -583,7 +585,6 @@
                     android:focusable="false"
                     android:orientation="horizontal">
 
-                 </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/showFastSearch"
@@ -621,15 +622,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/vs_10"
-                            android:layout_marginLeft="@dimen/vs_10"
+                            android:layout_marginStart="@dimen/vs_5"
+                            android:layout_marginLeft="@dimen/vs_5"
                             android:text=">"
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_30" />
                     </LinearLayout>
                 </LinearLayout>
-
-
 
 
 
@@ -682,7 +681,6 @@
 
 
 
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -744,6 +742,8 @@
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/ts_30" />
                     </LinearLayout>
+  </LinearLayout>
+
 
                     <LinearLayout
                         android:id="@+id/llClearCache"
